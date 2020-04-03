@@ -27,8 +27,8 @@ if (empty($_POST['usuario']) || empty($_POST['clave'])) {
 
 
     require_once "conexion.php"; // ojo
-    $user = $_POST['usuario'];
-    $pass = $_POST['clave'];
+    $user =mysqli_real_escape_string($conexion,$_POST['usuario'])   ;
+    $pass = md5(mysqli_real_escape_string($conexion,$_POST['clave']))   ;//m5  sirve para encriptar
 
     include_once "conexion.php";
 
