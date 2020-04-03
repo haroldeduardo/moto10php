@@ -107,6 +107,7 @@ if (empty($_POST['usuario']) || empty($_POST['clave'])) {
 
         <form action="" method="post">
             <h2>MOTO10RACING</h2>
+          
             <h3>M10R</h3>
             <input type="text" name="usuario" placeholder="Usuario">
             <input type="password" name="clave" placeholder="Contraseña">
